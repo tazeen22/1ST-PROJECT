@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+             box-sizing: border-box; 
+            margin: 0px;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background: rgb(139, 138, 138);
+            background-repeat: no-repeat;
+            padding: 28px 202px 140px 240px; 
+            width: fit-content;       
+            
+        }
+
+        .container {
+            justify-content: center; 
+            align-items: center;
+             min-height: 100vh;
+               
+        }
+
+        .box {
+            
+            /* flex-direction: row; */
+            position: static;
+            padding: 97px 20px 30px 20px;
+            height: 536px;
+            width: 400px;
+            background-color: rgb(230, 221, 221);
+           
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-left: 80px;
+            margin-bottom: 30px;
+
+        }
+
+        
+        .input-group {
+            width: 136%;
+        }
+
+        .input-field {
+            margin: 12px 0;
+            position: relative;
+            
+
+        }
+
+        .input-box {
+            width: 100%;
+            height: 30px;
+            font-size: 15px;
+            color: black;
+            border: none;
+            
+            padding: 7px 45px 0 20px;
+            outline: none;
+            position: center;
+
+        }
+
+        .input-submit {
+            width: 100%;
+            height: 34px;
+            font-size: 15px;
+            font-weight: 500;
+            border: none;
+            background: black;
+            color: white;
+             cursor: pointer;
+
+        }
+
+        .box-login {
+            padding: 50px;
+            position:absolute;
+                   
+        }
+
+        .user {
+            position: absolute;
+            top: 24px;
+            right: 23px;
+            
+        }
+       
+        .user-box {
+            
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+
+        .password {
+            position: absolute;
+            top: 24px;
+            right: 23px;
+            color: rgb(15, 15, 15);
+        }
+
+        .pass-box {
+            
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        img {
+            height: 536px;
+            float: right;
+            margin-left: 348px;
+            width: 50%;
+        
+        }  
+        .required::after{
+            color: red;
+            content: '*';
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="Log-in-form">
+
+        <div class="container">
+            <img src="bakwas.png" alt="helmet">
+            <div class="box">
+                <div class="box-login" id="login">
+                    <h2><strong>Log In</strong></h2>
+                    <div class="top header">
+                    </div>
+                    <div class="input-field">
+                        <label class="required">username</label>
+                        <br>
+                       
+                        <input type="text" class="input-box" id="logname" placeholder=" Enter your username" required>
+                        <div class="user">
+                            <div class="user-box">
+                                <i class="fa-regular fa-user" id="user"></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="input-field">
+                        <label class="required">Password</label><br>
+                        <input type="password" class="input-box" id="logpassword" placeholder=" Enter your password">
+                        <br>
+                        <br>
+                        <div class="password">
+                            <div class="password-box">
+                                <i class="fa-regular fa-eye" id="password"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="submit" class="input-submit" value="LogIn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

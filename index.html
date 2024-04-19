@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sign up</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+body{
+    background:  rgb(139, 138, 138)  ;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: fit-content;
+    display: block;
+    padding: 28px 202px 140px 240px;
+
+}
+.container{
+    
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+    
+    
+}
+.box{
+    
+    padding: 66px 20px 30px 20px ;
+    height: 536px;
+    width: 400px;
+    background-color: rgb(230, 221, 221);
+    
+}
+
+.top-header h2{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.input-group{
+    width:  117%;
+}
+.input-field{
+    margin: 12px 0;
+    position: relative;
+
+}
+.input-box{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    color: black;
+    border: none;
+    padding:  7px 45px 0 20px ;
+    outline: none;
+    position: center;
+}
+.input-submit{
+    width: 100%;
+    height: 34px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+
+}
+.input-sub{
+    width: 100%;
+    height: 34px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    background: rgb(201, 189, 189);
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+}
+.user{
+    position: absolute;
+    top: 21px;
+    right: 25px;
+}
+.user-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.mail{
+    position: absolute;
+    top: 21px;
+    right: 25px;
+}
+.mail-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.pass{
+    position: absolute;
+    top: 21px;
+    right: 25px;
+}
+.pass-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+h5{
+    text-align: left;
+}
+img{
+    height: 536px;
+    width: 400px;
+    float: right;
+    margin-left: 325px;
+}
+ 
+.box-login{
+    position:absolute; 
+
+   }
+.required::after{
+            color: red;
+            content: '*';
+        }
+        
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-left: 80px;
+            margin-bottom: 30px;
+
+        }
+
+
+</style>
+
+<body>
+    <div class="sign-up-form">
+        
+        <div class="container">
+            <img src="bakwas.png" alt="helmet">
+            <div class="box">
+                <div class="box-login" id="login">
+                    <div class="top-header">
+                        <h2><strong>Sign Up </strong></h2>
+                        <small>Start your 30 days free trial</small>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-field">
+                         <label class="required">Name</label> <br>
+                            <input type="text" class="input-box" id="logname" placeholder=" Enter your name">
+                            <div class="user">
+                                <div class="userbox">
+                                    <i class="fa-regular fa-user" id="user"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="input-field">
+                            <label class="required">Email</label> <br>
+                            <input type="text" class="input-box" id="mail" placeholder="Enter your Email">
+                            <div class="mail">
+                                <div class="mail-box">
+                                    <i class="fa-regular fa-envelope" id="envelope"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                           <label class="required">Password</label> <br>
+                            <input type="password" class="input-box" id="logpassword" placeholder="Create a password">
+                            <br>
+                            <br>
+                            <small>Must be at least 8 characters </small>
+                            <div class="pass">
+                                <div class="pass-box">
+                                    <i class="fa-regular fa-eye" id="pass"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" class="input-submit" value="Get Started">
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" class="input-sub" value="Sign Up with Google">
+                        </div>
+                        <div>
+                            <h5>Already have an Account <a href="#">Log In</a> </h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
